@@ -1,0 +1,37 @@
+channels:
+  - nodefaults
+  - bioconda
+  - conda-forge
+dependencies:
+  - python == 3.8
+  - anarci 
+  - hmmer 
+  - pdbfixer
+  - mdtraj
+  - jupyter
+  - scikit-optimize
+  - pandas
+  - pip
+  - tensorflow
+  - pip:
+    - biopython >= 1.79
+    - brewer2mpl
+    - chroma
+    - einops
+    - jax == 0.4.11
+    - jaxlib == 0.4.7
+    - freesasa
+    - immunebuilder
+    - matplotlib
+    - mlflow
+    - numpy
+    - pandas
+    - paretoset
+    - pytorch-lightning >= 2.0.7
+    - PyYAML
+    - torch == 1.13.1
+    - python-parallel
+    - scipy
+    - seaborn
+    - tqdm
+    - git+https://github.com/sokrypton/ColabDesign.git@v1.1.1
