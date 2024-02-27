@@ -1,0 +1,18 @@
+MOLINFO STRUCTURE=structure.pdb 
+
+# define all heavy atoms using GROMACS index file
+
+# make protein whole: add reference position of first heavy atom (in nm)
+#WHOLEMOLECULES ENTITY0=1-1555 ENTITY1=1556-2543 ADDREFERENCE
+
+#RVTRS
+#Nanobody THR 102 CA is 2333#
+#epitope center is CA SER161 1279#
+
+d: DISTANCE ATOMS=2333,1279
+#ASN12, VAL177, ALA97, ALA50
+tor: TORSION ATOMS=163,1408,2293,1914
+
+PRINT ARG=d,tor FILE=COLVAR_ANALYSIS STRIDE=1
+
+
